@@ -41,7 +41,7 @@ def parseVectorAndDropLastColumn(line):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
+    if len(sys.argv) != 1:
         print("Usage: kmeans <file> <k>", file=sys.stderr)
         exit(-1)
     sc = SparkContext(appName="KMeans")
